@@ -1,15 +1,14 @@
 import {ApplicationRef, Component} from '@angular/core';
-import {StoreService} from './store.service';
+import {StoreService} from '../../../../../src/app/store.service';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.css']
 })
-export class AppComponent {
-  title = 'Main Application';
-  counter: number;
+export class MainComponent {
 
+  counter: number;
   plus1() {
     this.storeService.serCounter(this.counter + 1);
 
@@ -29,4 +28,6 @@ export class AppComponent {
       this.appRef.tick();
     });
   }
+
+
 }
