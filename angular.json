@@ -158,8 +158,7 @@
               "projects/sub-app1/src/styles.css"
             ],
             "scripts": [],
-            "es5BrowserSupport": true,
-            "baseHref": "app1"
+            "es5BrowserSupport": true
           },
           "configurations": {
             "production": {
@@ -191,7 +190,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sub-app1:build"
+            "browserTarget": "sub-app1:build",
+            "port": 4201
           },
           "configurations": {
             "production": {
@@ -319,7 +319,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "sub-app2:build"
+            "browserTarget": "sub-app2:build",
+            "port": 4202
           },
           "configurations": {
             "production": {
